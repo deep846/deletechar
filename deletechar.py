@@ -3,6 +3,13 @@
 def delchar(s,c):
     str_test = s
     if(len(c)>1):
-        print(s)
+        return(str_test)
     new_str = str_test.replace(c,"")
-    return s
+    return new_str
+
+
+word = input("enter any word : ")
+char = input("enter any character to delete : ")
+
+a = delchar(word,char)
+print(a)
